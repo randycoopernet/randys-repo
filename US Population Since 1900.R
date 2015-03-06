@@ -1,0 +1,7 @@
+us.pop <- read.csv("~/Documents/r-repo/randys-repo/us-pop.csv")
+View(us.pop)
+xrange <- range(us.pop$Date)
+yrange <- range(us.pop$US.Population)
+plot(xrange,yrange, xlab="Date", ylab="Population (M)")
+lines(us.pop$Date,us.pop$US.Population, type="b")
+title("U.S. Population Since 1900")
